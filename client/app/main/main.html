@@ -1,6 +1,6 @@
 <div ng-include="'components/navbar/navbar.html'"></div>
 
-    <header>
+    <header style="height:100%">
         <div class="header-content">
             <div class="header-content-inner">
                 <h1>Got issues?</h1>
@@ -8,7 +8,12 @@
                 <!--p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
                 -->
                 <p>Gin can help you see issues using the Github API v3! Just have a user in mind whose repositories have issues, and you can see them.</p>
-                <a href="#about" class="btn btn-primary btn-xl page-scroll">Go!</a>
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="User's github account" style="height:52px;">
+                  <span class="input-group-addon" style="background-color:transparent;padding:0;border:0;">
+                    <a href="#about" class="btn btn-primary btn-xl page-scroll" style="width:200px;margin-left:-22px;">Go!</a>
+                  </span>
+                </div>
             </div>
         </div>
     </header>
