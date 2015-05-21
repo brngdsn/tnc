@@ -8,12 +8,15 @@
                 <!--p>Start Bootstrap can help you build better websites using the Bootstrap CSS framework! Just download your template and start going, no strings attached!</p>
                 -->
                 <p>Gin can help you see issues using the Github API v3! Just have a user in mind whose repositories have issues, and you can see them.</p>
+                <form action="{{'/'+gin}}">
                 <div class="input-group">
                   <input ng-model="gin" type="text" class="form-control" placeholder="User's github account" style="height:52px;">
+                  <input type="submit" style="height:0px;width:0px;border:0;padding:0;margin:0;">
                   <span class="input-group-addon" style="background-color:transparent;padding:0;border:0;">
                     <a ng-href="/{{gin}}" class="btn btn-primary btn-xl page-scroll" style="width:200px;margin-left:-22px;">Go!</a>
                   </span>
                 </div>
+                </form>
             </div>
         </div>
     </header>
