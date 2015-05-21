@@ -7,7 +7,7 @@ angular.module('ginApp')
       'link': '/about'
     },{
       'title': 'Fork',
-      'link': 'https://github.com/braungoodson/gin'
+      'link': 'https://github.com/braungoodson/gin/fork'
     },{
       'title': 'Contact',
       'link': '/contact'
