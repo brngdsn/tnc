@@ -9,9 +9,9 @@
                 -->
                 <p>Gin can help you see issues using the Github API v3! Just have a user in mind whose repositories have issues, and you can see them.</p>
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="User's github account" style="height:52px;">
+                  <input ng-model="gin" type="text" class="form-control" placeholder="User's github account" style="height:52px;">
                   <span class="input-group-addon" style="background-color:transparent;padding:0;border:0;">
-                    <a href="#about" class="btn btn-primary btn-xl page-scroll" style="width:200px;margin-left:-22px;">Go!</a>
+                    <a ng-href="/{{gin}}" class="btn btn-primary btn-xl page-scroll" style="width:200px;margin-left:-22px;">Go!</a>
                   </span>
                 </div>
             </div>
