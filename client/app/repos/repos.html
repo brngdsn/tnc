@@ -17,6 +17,12 @@
                         <p class="text-muted">{{repo.description}}</p>
                     </div>
                 </div>
+                <div ng-hide="repos.length > 0">
+                  <center>
+                    <span style="font-size:200px" class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span>
+                    <h2>dry</h2>
+                    </center>
+                </div>
                 <!--div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-paper-plane wow bounceIn text-primary" data-wow-delay=".1s"></i>
