@@ -3,8 +3,14 @@
 angular.module('ginApp')
   .controller('NavbarCtrl', function ($scope, $location) {
     $scope.menu = [{
-      'title': 'Home',
-      'link': '/'
+      'title': 'About',
+      'link': '/about'
+    },{
+      'title': 'Fork',
+      'link': 'https://github.com/braungoodson/gin'
+    },{
+      'title': 'Contact',
+      'link': '/contact'
     }];
 
     $scope.isCollapsed = true;
