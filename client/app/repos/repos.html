@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Showing {{user}}'s repositories:</div>
+    <div class="panel-body">
+      <div class="input-group">
+        <input type="text" ng-model="filter" class="form-control" placeholder="Repository's name...">
+        <span class="input-group-addon">filter</span>
+      </div>
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item" ng-repeat="repo in repos | filter:filter">
+        <span class="badge gin-badge">
+          <span class="glyphicon glyphicon-star gin-star" aria-hidden="true"></span>
+          {{repo.stargazers_count}}
+        </span>
+        <span class="badge gin-badge gin-badge-language">{{repo.language || 'UCL'}}</span>
+        <h4 class="media-heading"><a ng-href="/{{user}}/{{repo.name}}">{{repo.name}}</a></h4>
+        {{repo.description || 'There is nothing here.'}}
+      </li>
+      <li class="list-group-item" ng-hide="repos.length > 0"><center>There are no repositories.</center></li>
+    </ul>
+  </div>
+</div>
