@@ -1,10 +1,10 @@
 'use strict';
 
 angular.module('ginApp')
-  .service('IssuesService', function () {
+  .service('IssuesService', function ($resource) {
     return $resource('https://api.github.com/repos/:gin/:repo/issues', {
       gin: '@gin',
-      repos: '@repos'
+      repo: '@repo'
     }, {
       get: {
         method: 'GET',
